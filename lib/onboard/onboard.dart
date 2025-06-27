@@ -75,10 +75,6 @@ class _onboard extends State<Onboard>
                                   child: InkWell
                                   (
                                     onTap: () => setState(() {
-                                      if(currentindex == 0)
-                                      {
-                                        //مش فاكر المفروض يتكتب ايه
-                                      }
                                       currentindex--;
                                     }),
                                     child: Icon(Icons.arrow_back),)
@@ -166,7 +162,8 @@ class _onboard extends State<Onboard>
                     child: Container
                     (
                       alignment: Alignment.center,
-                      child: InkWell(
+                      child: InkWell
+                      (
                         onTap: () => setState(() {
                           currentindex++;
                           if(currentindex == 3 )
@@ -174,7 +171,8 @@ class _onboard extends State<Onboard>
                             Navigator.of(context).pushNamed("om");
                           }
                         }),
-                      child: Text("التالي"),)
+                      child: Text("التالي"),
+                      )
                     ),
                   )
                 ],
