@@ -28,7 +28,7 @@ class _Home extends State<Home>
             icon: Icon(Icons.shopping_cart_outlined),
             onPressed: () 
             {
-              Navigator.of(context).pushNamed("details");
+              Navigator.of(context).pushNamed("cart");
             },
           ),
         ],
@@ -271,30 +271,6 @@ List data=
                     decoration: BoxDecoration(color: Color.fromARGB(255, 111, 207, 151),borderRadius: BorderRadius.circular(10)),
                     child: IconButton(onPressed: () {}, icon: Icon(Icons.add, color: Colors.white,)),
                   )
-            
-            
-            
-                  // Container(
-                    
-                  //   height: 50,
-                  //   width: 50,
-                  //   decoration: BoxDecoration(
-                  //     color: const Color.fromARGB(255, 111, 207, 151),
-                  
-                  //     borderRadius: BorderRadius.circular(10),
-                  //   ),
-                  //   child: IconButton(
-                  //     icon: Icon(Icons.add, color: Colors.white),
-                  //     // onPressed: () {
-                  //     //   Navigator.push(
-                  //     //     context,
-                  //     //     // MaterialPageRoute(
-                  //     //     //   // builder: (context) => detals(),
-                  //     //     //   ),
-                  //     //     );
-                  //     // },
-                  //   ),
-                  // ),
                 ],
               ),
             ),

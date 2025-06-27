@@ -25,10 +25,10 @@ class MyApp extends StatelessWidget {
         'onboard': (context)=> Onboard(),
         'om': (context)=> Home(),
         'details': (context)=> details(),
-        'cart': (context)=> CardTheme(),
+        'cart': (context)=> Cart(),
       },
       debugShowCheckedModeBanner: false,
-      home: details(),
+      home: Onboard(),
     );
   }
 }

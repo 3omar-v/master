@@ -31,35 +31,40 @@ class _cart extends State<Cart>
       body: Container
       (
         padding: EdgeInsets.only(left: 20, right: 20, top: 10),
-        child: Column
+        child: SingleChildScrollView
         (
-          children: 
-          [
-            Container
-            (
-              width: double.infinity,
-              alignment: Alignment.centerLeft,
-              child: Text("Everything in your \ndoor step",style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
-            ),
-        
-        //==========================================================================================
-        
-            Container
-            (
-              child: GridView.builder
+          child: Column
+          (
+            children: 
+            [
+              Container
               (
-                shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 3,crossAxisSpacing: 3,childAspectRatio: 0.75,),
-                itemCount: 4,
-        
-                itemBuilder: (context, index) 
-                {
-                  return Item(index: index);
-                },
+                width: double.infinity,
+                alignment: Alignment.centerLeft,
+                child: Text("Everything in your \ndoor step",style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
               ),
-            ),
-          ],
+          
+          //==========================================================================================
+          
+              Container
+              (
+                child: GridView.builder
+                (
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 3,crossAxisSpacing: 3,childAspectRatio: 0.75,),
+                  itemCount: 4,
+
+                  itemBuilder: (context, index) 
+                  {
+                    return Item(index: index);
+                  },
+                ),
+              ),
+
+              
+            ],
+          ),
         ),
       ),
     );
