@@ -23,9 +23,9 @@ class MyApp extends StatelessWidget {
       routes: 
       {
         'onboard': (context)=> Onboard(),
-        // 'om': (context)=> om(),
-        // 'ar': (context)=> ar(),
-        'details': (context)=> details(),
+        'om': (context)=> Home(),
+        'ar': (context)=> ar(),
+        // 'details': (context)=> details(),
       },
       debugShowCheckedModeBanner: false,
       home: Onboard(),
